@@ -4,7 +4,7 @@ import CardBox from './CardBox/CardBox'
 import './WhyChooseUs.css'
 
 const WhyChooseUs = () => {
-	const {desc,title,cardData} = WhyChooseMeData;
+	const {desc,cardData} = WhyChooseMeData;
 
     return (
         <div className="feature-area pt-80 pb-70">

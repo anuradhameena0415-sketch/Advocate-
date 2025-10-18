@@ -1,8 +1,7 @@
 import React from 'react'
-import { NavLink, useNavigate } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const SingleBlogDetails = ({blogData}) => {
-    const navigate = useNavigate();
     const {date,comment,desc,imgURL,id,title,writer,} = blogData;
     console.log(id);
     return (
