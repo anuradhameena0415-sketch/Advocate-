@@ -1,0 +1,128 @@
+/* Team Section Styles */
+.team-area {
+    background-color: #f8f9fa;
+}
+
+.team-member {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    margin-bottom: 30px;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.team-image {
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+}
+
+.team-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+.team-member:hover .team-image img {
+    transform: scale(1.1);
+}
+
+.team-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.team-member:hover .team-overlay {
+    opacity: 1;
+}
+
+.team-social ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.team-social ul li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    color: #333;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    transition: all 0.3s ease;
+}
+
+.team-social ul li a:hover {
+    background: #007bff;
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+.team-content {
+    padding: 25px 20px;
+    text-align: center;
+}
+
+.team-content h4 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.team-position {
+    color: #007bff;
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.team-description {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .team-image {
+        height: 250px;
+    }
+    
+    .team-content {
+        padding: 20px 15px;
+    }
+    
+    .team-content h4 {
+        font-size: 20px;
+    }
+    
+    .team-position {
+        font-size: 14px;
+    }
+    
+    .team-description {
+        font-size: 13px;
+    }
+}

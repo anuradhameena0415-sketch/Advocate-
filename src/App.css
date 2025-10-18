@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css?family=Mada:300,400,500,600,700');
+body {
+    font-family: 'Mada', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    width: 100%;
+    color: #6e6e6e;
+}
+.img{
+    max-width: 100%;
+}
+.img-full img{
+    width: 100%;
+}
+a,
+button {
+    -webkit-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+a:focus,
+button:focus {
+    text-decoration: none;
+    outline: none;
+}
+a:focus,
+a:hover {
+    color: #b99044;
+    text-decoration: none;
+}
+a,
+button,
+input {
+    outline: medium none;
+    color: #434343;
+}
+.uppercase { 
+    text-transform: uppercase
+}
+.capitalize { 
+    text-transform: capitalize
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Droid Serif';
+    font-weight: normal;
+    color: #303030;
+    margin-top: 0px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a { 
+    color: inherit; 
+}
+h1 {
+    font-size: 36px;
+    font-weight: 500;
+}
+h2 {
+    font-size: 30px;
+}
+h3 {
+    font-size: 24px;
+}
+h4 {
+    font-size: 18px;
+}
+h5 {
+    font-size: 14px;
+}
+h6 {
+    font-size: 12px;
+}
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+p {
+    margin-bottom: 15px;
+}
+
+/*************************
+    Section title
+***********************/
+.section-title > h4 {
+	font-size: 22px;
+	font-weight: 700;
+	color: #b99044;
+	margin-top: 20px;
+	text-transform: capitalize;
+}
+.section-title > h2 {
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 36px;
+    margin-bottom: 25px;
+}
+.section-title > h2 > span {
+	color: #b99044;
+}
+.section-title > p {
+	font-size: 16px;
+	color: #606060;
+	font-weight: 400;
+	line-height: 25px;
+	margin: 0;
+	max-width: 635px;
+}
+.section-title.text-center > p {
+	margin: auto;
+    max-width: 630px;
+}
+/*************************
+         button
+*************************/
+.default-btn {
+	background: transparent;
+	border: 0;
+	color: #aaaaaa;
+	margin-top: 40px;
+	font-size: 14px;
+	line-height: 46px;
+	font-family: Droid Serif;
+	font-weight: 700;
+    position: relative;
+	text-transform: capitalize;
+	display: inline-block;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+.default-btn::before {
+	position: absolute;
+	bottom: 15px;
+	content: "";
+	width: 95px;
+	height: 1px;
+	background-color: #aaaaaa;
+	transition: all 0.3s ease-in-out;
+}
+.default-btn > i {
+	font-size: 24px;
+	vertical-align: middle;
+}
+.default-btn:hover{
+    color: #b99044;
+}
+.default-btn:hover::before{
+    background-color: #b99044;
+}
+/*************************
+       social-icon
+*************************/
+.social-link > li {
+	list-style: none;
+	display: inline-block;
+	margin: 0 5px;
+}
+.social-link > li > a {
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	display: block;
+	border: 1px solid #b99044;
+	text-align: center;
+	border-radius: 100%;
+	color: #b99044;
+}
+.social-link > li > a:hover {
+	background-color: #b99044;
+	color: #303030;
+}
+/*************************
+        Input
+*************************/
+input {
+	background: transparent;
+	border-bottom: 1px solid #707070;
+	height: 36px;
+	padding-left: 10px;
+	font-size: 14px;
+	color: #aaaaaa;
+	width: 100%;
+	box-shadow: none;
+	border-radius: 0;
+	border-width: 0 0 1px;
+}
+select {
+    width: 100%;
+    background: #eceff8;
+    border: 2px solid #eceff8;
+    height: 45px;
+    padding-left: 10px;
+    box-shadow: none;
+    font-size: 14px;
+    color: #626262;
+}
+option {
+    background: #fff;
+    border: 0px solid #626262;
+    padding-left: 10px;
+    font-size: 14px;
+}
+input:focus {
+    background: transparent;
+    border-bottom: 1px solid #fff;
+}
+textarea {
+	resize: vertical;
+	background: transparent;
+	border-bottom: 1px solid #707070;
+	padding: 10px;
+	color: #aaaaaa;
+	width: 100%;
+	font-size: 14px;
+	border-width: 0 0 1px;
+	resize: none;
+	height: 120px;
+}
+textarea:focus {
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    outline: none;
+}
+::-moz-placeholder {
+    color: #444;
+    font-size: 13px;
+}
+
+
+/*-------------------
+Common Style CSS
+-------------------*/
+.row-75 {
+	margin-left: -75px;
+	margin-right: -75px;
+}
+.header-top-wrap {
+	padding: 15px 75px;
+	background-color: #303030;
+	margin-bottom: -15px;
+}
+.wrapper.box-layout {
+	max-width: 1500px;
+	margin: auto;
+	width: 100%;
+	overflow: hidden;
+	box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+.row-25 {
+	margin-right: -25px;
+	margin-left: -25px;
+}
+.pricing-table-wrap {
+	padding-right: 25px;
+	padding-left: 25px;
+}
+
+/*----------------------------------
+    Login and Sign UP form
+------------------------------------*/
+.request-quate-area {
+	padding: 60px 50px;
+    background-color: #303030;
+}
+.request-quate-title > img {
+	margin-bottom: 25px;
+}
+.request-quate-title > h2 {
+	font-size: 34px;
+	color: #b99044;
+	font-weight: 700;
+	margin: 0;
+}
+.request-quate-form-style > input,
+.request-quate-form textarea{
+	color: #f9f9f9;
+}
+.request-quate-form input::-webkit-input-placeholder,
+.request-quate-form textarea::-webkit-input-placeholder{
+    color: #f9f9f9;
+}
+.request-quate-form input::-moz-placeholder,
+.request-quate-form textarea::-moz-placeholder{
+    color: #f9f9f9;
+}
+.request-quate-form input:-ms-input-placeholder,
+.request-quate-form textarea:-ms-input-placeholder{
+    color: #f9f9f9;
+}
+.request-quate-form input::placeholder,
+.request-quate-form textarea::placeholder{
+    color: #f9f9f9;
+}
+
+
+/* custom */
+
+.active-link{
+	color:#b99044!important;
+}
+
+.main-menu .my-btn {
+	margin-left: 55px;
+  }
+
+.my-btn {
+	display: inline-block;
+	background: #b99044;
+	color:#ffffff;
+	border: 1px solid #b99044;
+	padding: 6px 30px;
+  }
+.my-btn-border {
+	display: inline-block;
+	background: transparent;
+	color:#b99044;
+	border: 1px solid #b99044;
+	padding: 6px 30px;
+
+  }
+
+  .service-content .my-btn {
+	margin-top: 20px;
+  }
+
+  .request-quate-form .my-btn {
+	margin-bottom: 21px;
+  }
+  .price {
+	color: #000;
+	font-weight: 700;
+	font-size: 25px;
+	margin: 10px 0 5px;
+	display: inline-block;
+  }
+  .not-found {
+	text-align: center;
+	margin: 89px 0;
+	font-size: 70px;
+	color: #b99044;
+  }
