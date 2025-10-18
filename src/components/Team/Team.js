@@ -57,10 +57,10 @@ const Team = () => {
                                     <div className="team-overlay">
                                         <div className="team-social">
                                             <ul>
-                                                <li><a href="#"><i className="fa fa-facebook"></i></a></li>
-                                                <li><a href="#"><i className="fa fa-twitter"></i></a></li>
-                                                <li><a href="#"><i className="fa fa-linkedin"></i></a></li>
-                                                <li><a href="#"><i className="fa fa-instagram"></i></a></li>
+                                                <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i className="fa fa-facebook"></i></a></li>
+                                                <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><i className="fa fa-twitter"></i></a></li>
+                                                <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><i className="fa fa-linkedin"></i></a></li>
+                                                <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><i className="fa fa-instagram"></i></a></li>
                                             </ul>
                                         </div>
                                     </div>
